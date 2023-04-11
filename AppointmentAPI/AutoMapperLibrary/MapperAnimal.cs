@@ -1,6 +1,8 @@
-﻿namespace AppointmentAPI.Models
+﻿using MyLibrary;
+
+namespace AutoMapperLibrary
 {
-    public class Animal
+    public class MapperAnimal
     {
         public int Id { get; set; }
         public string Species { get; set; } = null!;

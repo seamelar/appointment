@@ -6,7 +6,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using AppointmentAPI;
-using AppointmentAPI.Models;
+using MyLibrary;
+using AutoMapper;
+using AutoMapperLibrary;
 
 namespace AppointmentAPI.Controllers
 {
@@ -15,10 +17,14 @@ namespace AppointmentAPI.Controllers
     public class AnimalsController : ControllerBase
     {
         private readonly DataContext _context;
+        private readonly IMapper _mapper;
 
-        public AnimalsController(DataContext context)
+        public MapperAnimal Animal { get; set; }
+
+        public AnimalsController(DataContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
         // GET: api/Animals
@@ -33,8 +39,9 @@ namespace AppointmentAPI.Controllers
         public async Task<ActionResult<Animal>> GetAnimal(int id)
         {
             var animal = await _context.Animals.FindAsync(id);
+            Animal = _mapper.Map<Animal, MapperAnimal>(animal);
 
-            if (animal == null)
+            if (Animal == null)
             {
                 return NotFound();
             }
@@ -51,7 +58,7 @@ namespace AppointmentAPI.Controllers
             {
                 return BadRequest();
             }
-
+            /*var animal = _mapper.Map<Animal>(Animal);*/
             _context.Entry(animal).State = EntityState.Modified;
 
             try

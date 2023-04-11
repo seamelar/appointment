@@ -1,6 +1,7 @@
-﻿using AppointmentAPI.Models;
+﻿
+using System;
 
-namespace FeedAPI.Models
+namespace MyLibrary
 {
     public class Feed
     {
