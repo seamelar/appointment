@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using FeedAPI;
-using FeedAPI.Models;
+using MyLibrary;
 
 namespace FeedAPI.Controllers
 {

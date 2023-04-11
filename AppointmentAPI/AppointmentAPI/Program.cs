@@ -1,11 +1,12 @@
 using AppointmentAPI;
 using Microsoft.EntityFrameworkCore;
+using MyLibrary;
 
 var builder = WebApplication.CreateBuilder(args);
 var myAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
 
-
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
 // Add services to the container.
 

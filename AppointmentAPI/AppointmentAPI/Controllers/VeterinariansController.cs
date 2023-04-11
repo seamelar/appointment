@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using AppointmentAPI;
-using AppointmentAPI.Models;
+using MyLibrary;
 
 namespace AppointmentAPI.Controllers
 {

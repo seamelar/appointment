@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppointmentAPI", "Appointme
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FeedAPI", "FeedAPI\FeedAPI.csproj", "{B075DF9F-72C7-4632-825A-B9DC196579E6}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyLibrary", "MyLibrary\MyLibrary.csproj", "{7EFB5BB6-55E9-4A7F-83FA-D515FCAC0002}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoMapperLibrary", "AutoMapperLibrary\AutoMapperLibrary.csproj", "{981D1548-617B-4880-8D75-CA099AA6AF3F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{B075DF9F-72C7-4632-825A-B9DC196579E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B075DF9F-72C7-4632-825A-B9DC196579E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B075DF9F-72C7-4632-825A-B9DC196579E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EFB5BB6-55E9-4A7F-83FA-D515FCAC0002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EFB5BB6-55E9-4A7F-83FA-D515FCAC0002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EFB5BB6-55E9-4A7F-83FA-D515FCAC0002}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EFB5BB6-55E9-4A7F-83FA-D515FCAC0002}.Release|Any CPU.Build.0 = Release|Any CPU
+		{981D1548-617B-4880-8D75-CA099AA6AF3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{981D1548-617B-4880-8D75-CA099AA6AF3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{981D1548-617B-4880-8D75-CA099AA6AF3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{981D1548-617B-4880-8D75-CA099AA6AF3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

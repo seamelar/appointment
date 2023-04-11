@@ -1,4 +1,4 @@
-﻿namespace AppointmentAPI.Models
+﻿namespace MyLibrary
 {
     public class Veterinarian
     {
