@@ -9,6 +9,7 @@ using AppointmentAPI;
 using MyLibrary;
 using AutoMapper;
 using AutoMapperLibrary;
+using Context;
 
 namespace AppointmentAPI.Controllers
 {

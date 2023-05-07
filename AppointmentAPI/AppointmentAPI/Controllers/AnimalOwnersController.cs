@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using AppointmentAPI;
 using MyLibrary;
+using Context;
 
 namespace AppointmentAPI.Controllers
 {
